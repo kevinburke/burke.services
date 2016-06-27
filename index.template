@@ -1,0 +1,9 @@
+<!doctype html>
+<head>
+	<title>Kevin Burke - Consulting</title>
+	<link rel="stylesheet" type="text/css" href="markdown.css">
+</head>
+<body>
+{{ .Content }}
+</body>
+</html>
