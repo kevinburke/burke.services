@@ -3,3 +3,6 @@ watch:
 
 serve:
 	go run burke_services_server/main.go
+
+compile:
+	go run burke_services_renderer/main.go index.md > public/index.html
