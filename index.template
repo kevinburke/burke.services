@@ -1,7 +1,8 @@
 <!doctype html>
 <head>
-	<title>Kevin Burke - Consulting</title>
-	<link rel="stylesheet" type="text/css" href="markdown.css">
+  <title>Kevin Burke - Consulting</title>
+  <link rel="stylesheet" type="text/css" href="markdown.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 {{ .Content }}
