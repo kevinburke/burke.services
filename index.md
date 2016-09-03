@@ -80,9 +80,29 @@ Bash, PHP. I've maintained API clients in more languages than that. Here's
 my [resume](https://kev.inburke.com/resume/kevinburke.pdf). Here's [a list of
 talks that I've given][talks], with links to video.
 
-[Get in touch!](mailto:kev+consulting@inburke.com)
+[Contact Me](mailto:kev+consulting@inburke.com)
+
+### Previous Engagements
+
+#### [Notion Labs][notion]
+
+> "Kevin came in for a week and went over our entire backend. He found a bunch
+> of security holes, helped us set up better ops practices, and figured out
+> ways to improve our database performance. In the end, everything was running
+> smoother and more secure. We call him the one-man S.W.A.T. team for SF
+> startups, and already booked his next available slot 👍" - [Ivan Zhao][ivan],
+> Co-founder
+
+#### [Ngrok, Inc][ngrok]
+
+Feature development and improving the testing/local development infrastructure.
+
+[Contact Me](mailto:kev+consulting@inburke.com)
 
 [speed-tests]: https://shyp.github.io/2015/07/13/speed-up-your-javascript-tests.html
 [write-docs]: https://www.youtube.com/watch?v=sQP_hUNCrcE
 [great-client-libraries]: https://www.youtube.com/watch?v=C_UJHqR_2Mo
 [talks]: https://github.com/kevinburke/talks/blob/master/videos.md
+[notion]: https://www.notion.so/
+[ivan]: http://ivzhao.com/
+[ngrok]: https://ngrok.com

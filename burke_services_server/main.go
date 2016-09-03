@@ -13,7 +13,7 @@ func main() {
 	http.Handle("/", http.FileServer(http.Dir("./public")))
 	go func() {
 		time.Sleep(30 * time.Millisecond)
-		fmt.Sprintf("Listening on port %d", *port)
+		fmt.Printf("Listening on port %d\n", *port)
 	}()
 	http.ListenAndServe(fmt.Sprintf(":%d", *port), nil)
 }

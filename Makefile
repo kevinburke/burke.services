@@ -6,3 +6,9 @@ serve:
 
 compile:
 	go run burke_services_renderer/main.go index.md > public/index.html
+
+vet:
+	go vet ./...
+
+test: vet
+	go test ./...
