@@ -6,7 +6,10 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"runtime"
 )
+
+const Version = "1.2"
 
 func main() {
 	flag.Parse()
@@ -20,13 +23,18 @@ func main() {
 	}
 	// todo make this work with relative paths.
 	tpl, err := template.ParseFiles("index.template")
+	tpl = tpl.Option("missingkey=error")
 	if err != nil {
 		log.Fatal(err)
 	}
 	data := struct {
-		Content template.HTML
+		Content   template.HTML
+		GoVersion string
+		Version   string
 	}{
-		Content: template.HTML(out),
+		Content:   template.HTML(out),
+		GoVersion: runtime.Version(),
+		Version:   Version,
 	}
 	err = tpl.Execute(os.Stdout, data)
 	if err != nil {

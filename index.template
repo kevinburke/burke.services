@@ -15,5 +15,8 @@
   ga('create', 'UA-79991861-1', 'auto');
   ga('send', 'pageview');
 </script>
+<footer>
+  burke.services {{ .Version }}, built using {{ .GoVersion }}
+</footer>
 </body>
 </html>

@@ -12,3 +12,6 @@ vet:
 
 test: vet
 	go test ./...
+
+release:
+	bump_version minor burke_services_renderer/main.go
