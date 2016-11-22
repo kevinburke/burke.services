@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"net/http"
 	"time"
+
+	"github.com/kevinburke/handlers"
 )
 
 func main() {
@@ -15,5 +17,5 @@ func main() {
 		time.Sleep(30 * time.Millisecond)
 		fmt.Printf("Listening on port %d\n", *port)
 	}()
-	http.ListenAndServe(fmt.Sprintf(":%d", *port), nil)
+	http.ListenAndServe(fmt.Sprintf(":%d", *port), handlers.Log(http.DefaultServeMux))
 }
