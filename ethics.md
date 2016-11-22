@@ -109,13 +109,7 @@ overturned.
 We'll sign a contract for work for a period of time, usually a month or a
 little more. I try to dedicate as much of my working hours as a I can to the
 project, but I might not dedicate 100% to the project - I need to get coffee,
-go to the bathroom, eat lunch, keep track of expenses, and various other
-sundries. Occasionally I do things that don't *look* like software development,
-like taking a walk. Walks (and in general, stepping away from the computer) are
-really useful for helping me think through a problem.
-
-I won't spend 100% of my waking hours working on a project; with some
-exceptions, I only work during business hours, from 9am to 6pm.
+go to the bathroom, eat lunch, keep track of expenses, etc.
 
 ### Promises
 
