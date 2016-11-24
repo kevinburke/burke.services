@@ -39,9 +39,11 @@ seconds][speed-tests]. I can apply the same techniques to your team's build,
 production codebase, or framework. I can also teach your team how to write
 faster tests.
 
-- **Write**. I have written posts that [made the front page of Hacker News][hn]
-/ [Programming Reddit][reddit] at least ten times; I can help kickstart your
-company's engineering blog, or work with your team on story ideas.
+- **Write**. I have written at least ten posts that [made the front page of
+Hacker News][hn] / [Programming Reddit][reddit] (nb - Those aren't the best
+proxies for quality or popularity, but they are well known proxies). I can
+help kickstart your company's engineering blog, or work with your team on
+story/content ideas.
 
 [hn]: https://hn.algolia.com/?query=inburke.com&sort=byPopularity&prefix=false&page=0&dateRange=all&type=story
 [reddit]: https://www.reddit.com/r/programming/search?q=url%3Akev.inburke.com&sort=top&restrict_sr=on&t=all
@@ -50,7 +52,7 @@ company's engineering blog, or work with your team on story ideas.
 issues, often on the fly, while oncall. Here is an example from Shyp's eBay
 integration - our integration server was throwing errors on maybe 1 out of
 every 500 eBay requests, and it was very difficult to reproduce. I [nailed down
-the issue and submitted a fix][fix].
+the issue and submitted a fix, in a matter of hours][fix].
 
 [fix]: https://github.com/Shyp/nodejs-ebay-api/commit/bd7e3835ee453404a7e05084dd7abf0b17762198
 
@@ -72,8 +74,8 @@ clients; I gave a talk about [designing great client libraries at Twiliocon
 in 2013][great-client-libraries]. I can work with your team on API and client
 library design.
 
-- **Other Stuff.** This is not an exclusive list! I've learned a ton on the fly
-and can probably do that with your company as well.
+- **Other Stuff.** This is not an exclusive list! I've learned a ton on the
+fly, and can probably do that with your company as well.
 
 I have experience with an array of languages, notably Go, Javascript, Python,
 Bash, PHP. I've maintained API clients in more languages than that. Here's
@@ -93,6 +95,11 @@ talks that I've given][talks], with links to video.
 > startups, and already booked his next available slot 👍" - [Ivan Zhao][ivan],
 > Co-founder
 
+#### Twilio customer
+
+Built [Logrole][logrole], an extremely fast, fine-grained Twilio log viewer, in
+a one month engagement.
+
 #### [Ngrok, Inc][ngrok]
 
 Feature development and improving the testing/local development infrastructure.
@@ -106,3 +113,4 @@ Feature development and improving the testing/local development infrastructure.
 [notion]: https://www.notion.so/
 [ivan]: http://ivzhao.com/
 [ngrok]: https://ngrok.com
+[logrole]: https://github.com/saintpete/logrole
