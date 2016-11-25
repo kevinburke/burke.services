@@ -84,6 +84,18 @@ talks that I've given][talks], with links to video.
 
 [Contact Me](mailto:kev+consulting@inburke.com)
 
+### Rates
+
+A typical contract is for 1 month of work. I am normally booked 1 to 3 months
+in advance.
+
+I'm open to shorter contracts, but prefer longer ones. For a shorter contract,
+we'll divide my monthly rate by the number of days you want, and add a small
+amount of overhead.
+
+Please note that work will be conducted in accordance with my [ethics
+policy][ethics].
+
 ### Previous Engagements
 
 #### [Notion Labs][notion]
@@ -114,3 +126,4 @@ Feature development and improving the testing/local development infrastructure.
 [ivan]: http://ivzhao.com/
 [ngrok]: https://ngrok.com
 [logrole]: https://github.com/saintpete/logrole
+[ethics]: https://burke.services/ethics.html
