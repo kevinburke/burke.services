@@ -19,7 +19,8 @@ scholarships to attend tech conferences.
 - $200 to [GoBridge][gobridge], an organization that teaches Go to
 underrepresented groups.
 
-- $50 to the OpenBSD Foundation, which works on libressl (among other things).
+- $50 to [the OpenBSD Foundation][openbsd], which works on libressl (among
+other things).
 
 - $100 to [the Software Freedom Conservancy][sfc] (which hosts Homebrew, Git,
   Mercurial and other projects).
@@ -63,3 +64,4 @@ deductible but it's easy for people to give to you.
 [press]: https://freedom.press/
 [nilc]: https://www.nilc.org/
 [gobridge]: https://golangbridge.org/
+[openbsd]: http://www.openbsdfoundation.org/
