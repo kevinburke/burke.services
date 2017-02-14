@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/kb
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://burke.services
+  * I am kb (https://keybase.io/kb) on keybase.
+  * I have a public key ASCuy-Hl1IRfFaqMWouio3pGUZGxvWqxvoJW1FuCZsgBGgo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01018f02b3abf0c449247ce823aae6accc021aacabe3ef3d38528b869de09bfa2c1e0a",
+            "host": "keybase.io",
+            "kid": "0120aecbe1e5d4845f15aa8c5a8ba2a37a465191b1bd6ab1be8256d45b8266c8011a0a",
+            "uid": "31dc0833a925ba2c30f0ea39a78f2e00",
+            "username": "kb"
+        },
+        "service": {
+            "hostname": "burke.services",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1487098517,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1487098502,
+        "hash": "775a35b0c648af2c60c528c0f0a325f339bc6b9bbd1f5df09e3e1c421e20358bc01c4bfc3c384a9172dfa6a3c4da32c1e6bb5bc489011382e59f01a20ec3177e",
+        "seqno": 889768
+    },
+    "prev": "eff727c558362e490e72fd97fef333fa432ec76cfb00f0917e03112f1a96b72a",
+    "seqno": 37,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgrsvh5dSEXxWqjFqLoqN6RlGRsb1qsb6CVtRbgmbIARoKp3BheWxvYWTFAvF7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxOGYwMmIzYWJmMGM0NDkyNDdjZTgyM2FhZTZhY2NjMDIxYWFjYWJlM2VmM2QzODUyOGI4NjlkZTA5YmZhMmMxZTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYWVjYmUxZTVkNDg0NWYxNWFhOGM1YThiYTJhMzdhNDY1MTkxYjFiZDZhYjFiZTgyNTZkNDViODI2NmM4MDExYTBhIiwidWlkIjoiMzFkYzA4MzNhOTI1YmEyYzMwZjBlYTM5YTc4ZjJlMDAiLCJ1c2VybmFtZSI6ImtiIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJidXJrZS5zZXJ2aWNlcyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE4In0sImN0aW1lIjoxNDg3MDk4NTE3LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0ODcwOTg1MDIsImhhc2giOiI3NzVhMzViMGM2NDhhZjJjNjBjNTI4YzBmMGEzMjVmMzM5YmM2YjliYmQxZjVkZjA5ZTNlMWM0MjFlMjAzNThiYzAxYzRiZmMzYzM4NGE5MTcyZGZhNmEzYzRkYTMyYzFlNmJiNWJjNDg5MDExMzgyZTU5ZjAxYTIwZWMzMTc3ZSIsInNlcW5vIjo4ODk3Njh9LCJwcmV2IjoiZWZmNzI3YzU1ODM2MmU0OTBlNzJmZDk3ZmVmMzMzZmE0MzJlYzc2Y2ZiMDBmMDkxN2UwMzExMmYxYTk2YjcyYSIsInNlcW5vIjozNywidGFnIjoic2lnbmF0dXJlIn2jc2lnxEDExhhwkl1+oYAGF8jRTXVIuWybHaqqi+nwtyDxO8ccr07n9rBT6rJ3BdUxvK7xPf+A/MFleS+zvo4jslIFPd4BqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg5AyBvsyAB+zmN7STCwQWnwVi22f0xhVOtACxFXpCW/GjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kb
+
+==================================================================
