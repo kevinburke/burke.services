@@ -8,7 +8,7 @@ you improve the availability and reliability of your Twilio-based application.
 
 [Email me!][email]
 
-[email]: kev+consulting@inburke.com
+[email]: mailto:kev+consulting@inburke.com
 
 ### Products Shipped at Twilio
 

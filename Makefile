@@ -31,3 +31,5 @@ ifndef BUMP_VERSION
 	go get github.com/Shyp/bump_version
 endif
 	bump_version minor burke_services_renderer/main.go
+	@# pick up the version change
+	go install ./burke_services_renderer
