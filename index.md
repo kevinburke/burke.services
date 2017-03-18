@@ -107,12 +107,12 @@ policy][ethics].
 > startups, and already booked his next available slot 👍" - [Ivan Zhao][ivan],
 > Co-founder
 
-#### Twilio customer
+#### A Twilio customer
 
 Built [Logrole][logrole], an extremely fast, fine-grained Twilio log viewer, in
 a one month engagement.
 
-#### [Ngrok, Inc][ngrok]
+#### [Ngrok LLC][ngrok]
 
 Feature development and improving the testing/local development infrastructure.
 
