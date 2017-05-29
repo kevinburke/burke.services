@@ -10,6 +10,12 @@
 I'm available for hire as a consultant. Here are some of the things I can do
 for your company:
 
+- **Solve complex problems in production.** I helped Segment analyze their
+6-million line AWS bill and allocate each line item to the team that incurred
+it. [Read more about this here][segment].
+
+[segment]: /segment.html
+
 - **Teach your team about consistency.** At <a href="https://shyp.com">Shyp</a>
 the biggest oncall problem we had was in driver assignment; two drivers
 would get assigned the same pickup, or a pickup would get "assigned" but
