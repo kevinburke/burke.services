@@ -2,10 +2,10 @@
 
 <br/>
 <p>
-<img width=200 height=250 src="https://kev.inburke.com/photos/profile-small.jpg" alt="Profile photo">
+<img width=200 height=250 src="https://burke.services/profile-small.jpg" alt="Profile photo">
 </p>
 
-[Email Me](mailto:kev+consulting@inburke.com)
+[Email Me](mailto:kevin@burke.services)
 
 I'm available for hire as a consultant. Here are some of the things I can do
 for your company:
@@ -88,7 +88,7 @@ Bash, PHP. I've maintained API clients in more languages than that. Here's
 my [resume](https://kev.inburke.com/resume/kevinburke.pdf). Here's [a list of
 talks that I've given][talks], with links to video.
 
-[Contact Me](mailto:kev+consulting@inburke.com)
+[Contact Me](mailto:kevin@burke.services)
 
 ### Rates
 
@@ -122,7 +122,7 @@ a one month engagement.
 
 Feature development and improving the testing/local development infrastructure.
 
-[Contact Me](mailto:kev+consulting@inburke.com)
+[Contact Me](mailto:kevin@burke.services)
 
 [speed-tests]: https://shyp.github.io/2015/07/13/speed-up-your-javascript-tests.html
 [write-docs]: https://www.youtube.com/watch?v=sQP_hUNCrcE
