@@ -23,6 +23,9 @@ serve:
 public/2016/donations.html: 2016-donations.md
 	burke_services_renderer 2016-donations.md > public/2016/donations.html
 
+public/capital-one-open-redirect.html: open-redirect.md
+	burke_services_renderer open-redirect.md > public/capital-one-open-redirect.html
+
 public/%.html: %.md
 ifndef RENDERER
 	go install ./burke_services_renderer
