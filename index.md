@@ -110,6 +110,22 @@ policy][ethics].
 
 ### Previous Engagements
 
+#### [Otto](https://meetotto.com)
+
+Massively improved the team's velocity and ability to identify and fix errors,
+and deploy them two production. Rewrote two unmaintained C servers in Go.
+Transitioned server-side software stack from physical machines to AWS.
+
+Code reviewed, identified, fixed, and shipped features for a Node.JS app serving
+the Otto API. Added several libraries to improve team velocity, ease testing and
+standardize the codebase.
+
+#### [Segment](https://www.segment.com)
+
+Built a billing pipeline to help Segment [account for its AWS costs][segment].
+Built an admin dashboard with fine-grained permissions for viewing data about
+accounts.
+
 #### [Notion Labs][notion]
 
 > "Kevin came in for a week and went over our entire backend. He found a bunch
