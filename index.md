@@ -33,6 +33,14 @@ learn from its mistakes, ship reliable code, and brought the number of pager
 incidents to an extremely low value. I'll work with your team to figure out
 where the problem areas are, and recommend/implement solutions.
 
+- **Rewrite it in Go.** Do you have a server that no one understands, that needs
+better throughput, or fails in unpredictable ways? Is your team interested
+in kicking the tires with Go for a new project? I'm a contributor to the Go
+programming language, I've written (and rewritten) several services in Go for
+several companies, and can do the same for you. This will include a testing and
+deployment strategy, a method for loading configuration from the environment,
+and for starting and testing a local server.
+
 - **Find problems in the build.** Intermittent build failures train your team
 that build failures are okay, and then you might miss a more important error
 that comes through. Or, an intermittent build failure might represent a real
@@ -45,11 +53,9 @@ seconds][speed-tests]. I can apply the same techniques to your team's build,
 production codebase, or framework. I can also teach your team how to write
 faster tests.
 
-- **Write**. I have written at least ten posts that [made the front page of
-Hacker News][hn] / [Programming Reddit][reddit] (nb - Those aren't the best
-proxies for quality or popularity, but they are well known proxies). I can
-help kickstart your company's engineering blog, or work with your team on
-story/content ideas.
+- **Write**. I can help kickstart your company's engineering blog, or work with
+your team on story/content ideas. In the past I've had lots of success
+attracting [a wide audience][hn] to [stories I've written][reddit].
 
 [hn]: https://hn.algolia.com/?query=inburke.com&sort=byPopularity&prefix=false&page=0&dateRange=all&type=story
 [reddit]: https://www.reddit.com/r/programming/search?q=url%3Akev.inburke.com&sort=top&restrict_sr=on&t=all

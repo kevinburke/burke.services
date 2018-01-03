@@ -1,7 +1,7 @@
-BUMP_VERSION := $(shell command -v bump_version)
-JUSTRUN := $(shell command -v justrun)
-RECOMPILE := $(shell command -v recompile)
-RENDERER := $(shell command -v burke_services_renderer)
+BUMP_VERSION := $(GOPATH)/bin/bump_version
+JUSTRUN := $(GOPATH)/bin/justrun
+RECOMPILE := $(GOPATH)/bin/recompile
+RENDERER := $(GOPATH)/bin/burke_services_renderer
 
 WATCH_TARGETS := $(shell find . -name '*.md')
 GO_FILES := $(shell find . -name '*.go')
@@ -33,22 +33,21 @@ public/2017/donations.html: 2017-donations.md | public/2017
 public/capital-one-open-redirect.html: open-redirect.md
 	burke_services_renderer open-redirect.md > public/capital-one-open-redirect.html
 
-public/%.html: %.md
-ifndef RENDERER
+$(RENDERER):
 	go install ./burke_services_renderer
-endif
-ifndef RECOMPILE
+
+$(RECOMPILE):
 	go get -u github.com/kevinburke/recompile
-endif
-	echo "$?"
+
+public/%.html: %.md | $(RENDERER) $(RECOMPILE)
 	@recompile --command='burke_services_renderer' --out-dir=public --extension=html $?
 
 compile: public/*.html public/2016/donations.html public/2017/donations.html
 
-release:
-ifndef BUMP_VERSION
+$(BUMP_VERSION):
 	go get github.com/Shyp/bump_version
-endif
-	bump_version minor burke_services_renderer/main.go
+
+release: $(BUMP_VERSION)
+	$(BUMP_VERSION) minor burke_services_renderer/main.go
 	@# pick up the version change
-	go install ./burke_services_renderer
+	$(MAKE) $(RENDERER)
