@@ -123,5 +123,5 @@ for this document.
 [life-or-death]: https://techcrunch.com/2016/11/16/when-bias-in-product-design-means-life-or-death/
 [jepsen-ethics]: http://jepsen.io/ethics.html
 [estimate]: https://en.wikipedia.org/wiki/Planning_fallacy
-[estimation-problem]: https://en.wikipedia.org/wiki/Software_development_effort_estimation<Paste>
+[estimation-problem]: https://en.wikipedia.org/wiki/Software_development_effort_estimation
 [korematsu]: https://en.wikipedia.org/wiki/Korematsu_v._United_States
