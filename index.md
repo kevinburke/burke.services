@@ -113,7 +113,7 @@ policy][ethics].
 #### [Otto](https://meetotto.com)
 
 Massively improved the team's velocity and ability to identify and fix errors,
-and deploy them two production. Rewrote two unmaintained C servers in Go.
+and deploy them to production. Rewrote two unmaintained C servers in Go.
 Transitioned server-side software stack from physical machines to AWS.
 
 Code reviewed, identified, fixed, and shipped features for a Node.JS app serving
