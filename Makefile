@@ -6,6 +6,11 @@ RENDERER := $(GOPATH)/bin/burke_services_renderer
 WATCH_TARGETS := $(shell find . -name '*.md')
 GO_FILES := $(shell find . -name '*.go')
 
+compile: public/*.html public/2016/donations.html public/2017/donations.html
+
+public/%.html: %.md | $(RENDERER) $(RECOMPILE)
+	@recompile --command='burke_services_renderer' --out-dir=public --extension=html $?
+
 vet:
 	go vet ./...
 
@@ -39,13 +44,8 @@ $(RENDERER):
 $(RECOMPILE):
 	go get -u github.com/kevinburke/recompile
 
-public/%.html: %.md | $(RENDERER) $(RECOMPILE)
-	@recompile --command='burke_services_renderer' --out-dir=public --extension=html $?
-
-compile: public/*.html public/2016/donations.html public/2017/donations.html
-
 $(BUMP_VERSION):
-	go get github.com/Shyp/bump_version
+	go get github.com/kevinburke/bump_version
 
 release: $(BUMP_VERSION)
 	$(BUMP_VERSION) minor burke_services_renderer/main.go
