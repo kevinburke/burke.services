@@ -116,14 +116,10 @@ Built a billing pipeline to help Segment [account for its AWS costs][segment].
 Built an admin dashboard with fine-grained permissions for viewing data about
 accounts.
 
-#### [Notion Labs][notion]
+#### Company in the Healthcare space
 
-> "Kevin came in for a week and went over our entire backend. He found a bunch
-> of security holes, helped us set up better ops practices, and figured out
-> ways to improve our database performance. In the end, everything was running
-> smoother and more secure. We call him the one-man S.W.A.T. team for SF
-> startups, and already booked his next available slot 👍" - [Ivan Zhao][ivan],
-> Co-founder
+Reduced runtime of a Ruby on Rails test suite from 35-40 minutes to 16-18
+minutes. Upgraded Rails several minor versions.
 
 #### A Twilio customer
 
