@@ -9,7 +9,7 @@ import (
 	"runtime"
 )
 
-const Version = "1.27"
+const Version = "1.28"
 
 func main() {
 	flag.Parse()
