@@ -1,0 +1,24 @@
+on: [push, pull_request]
+name: Test
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # go.mod requires 1.27, so older releases can't build this module.
+        go-version: ['1.27.x']
+    steps:
+    - uses: actions/checkout@v7.0.1
+    - name: Install Go
+      uses: actions/setup-go@v7.0.0
+      with:
+        go-version: ${{ matrix.go-version }}
+        cache-dependency-path: go.sum
+    - name: Install markdown
+      # Gruber's Markdown.pl, which passes raw HTML through. The renderer
+      # refuses output from tools that strip it.
+      run: sudo apt-get update && sudo apt-get install --yes markdown
+    - name: Lint
+      run: make lint
+    - name: Check generated pages are up to date
+      run: make check

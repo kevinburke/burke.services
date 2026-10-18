@@ -9,7 +9,7 @@
 <body>
 {{ .Content }}
 <footer>
-  burke.services {{ .Version }}, built using {{ .GoVersion }}
+  burke.services {{ .Version }}
 </footer>
 </body>
 </html>

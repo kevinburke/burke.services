@@ -54,7 +54,11 @@ check: vet
 	differ gofmt -w .
 
 vet:
-	go vet ./...
+	go vet -trimpath ./...
+
+lint: vet
+	go install honnef.co/go/tools/cmd/staticcheck@latest
+	$(shell go env GOPATH)/bin/staticcheck ./...
 
 test: vet
 	go test -trimpath ./...
@@ -75,4 +79,4 @@ release: $(BUMP_VERSION)
 	$(BUMP_VERSION) minor burke_services_renderer/main.go
 	$(MAKE) --always-make compile
 
-.PHONY: compile check vet test watch serve release
+.PHONY: compile check lint vet test watch serve release

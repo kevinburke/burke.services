@@ -18,7 +18,7 @@ import (
 	"runtime"
 )
 
-const Version = "1.28"
+const Version = "1.30"
 
 // strippedHTMLMarker is the comment goldmark and some other renderers emit in
 // place of raw HTML when "unsafe" rendering is disabled.
@@ -61,14 +61,15 @@ func run(filename string) error {
 		return err
 	}
 	tpl = tpl.Option("missingkey=error")
+	// The Go version is deliberately left out of the page: it would make
+	// the output depend on the toolchain, so "make check" would fail any
+	// time CI and a local build used different Go releases.
 	data := struct {
-		Content   template.HTML
-		GoVersion string
-		Version   string
+		Content template.HTML
+		Version string
 	}{
-		Content:   template.HTML(out),
-		GoVersion: runtime.Version(),
-		Version:   Version,
+		Content: template.HTML(out),
+		Version: Version,
 	}
 	// Render into a buffer so a template error doesn't leave a partially
 	// written page behind.
