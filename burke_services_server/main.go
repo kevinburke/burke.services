@@ -1,11 +1,14 @@
+// Command burke_services_server serves the ./public directory for local
+// development.
 package main
 
 import (
 	"flag"
 	"fmt"
-	"log"
+	"log/slog"
 	"net"
 	"net/http"
+	"os"
 
 	"github.com/kevinburke/handlers"
 )
@@ -16,8 +19,12 @@ func main() {
 	http.Handle("/", http.FileServer(http.Dir("./public")))
 	ln, err := net.Listen("tcp", fmt.Sprintf(":%d", *port))
 	if err != nil {
-		log.Fatal(err)
+		slog.Error("could not listen", "port", *port, "err", err)
+		os.Exit(1)
 	}
-	fmt.Printf("Listening on port %d\n", *port)
-	http.Serve(ln, handlers.Log(http.DefaultServeMux))
+	slog.Info("listening", "port", *port)
+	if err := http.Serve(ln, handlers.Log(http.DefaultServeMux)); err != nil {
+		slog.Error("server exited", "err", err)
+		os.Exit(1)
+	}
 }

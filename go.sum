@@ -1,0 +1,12 @@
+github.com/gofrs/uuid/v5 v5.4.0 h1:EfbpCTjqMuGyq5ZJwxqzn3Cbr2d0rUZU7v5ycAk/e/0=
+github.com/gofrs/uuid/v5 v5.4.0/go.mod h1:CDOjlDMVAtN56jqyRUZh58JT31Tiw7/oQyEXZV+9bD8=
+github.com/inconshreveable/log15/v3 v3.2.1 h1:oS4MCb1d5ep7xppvSI/1na3wnpih1VbqkEJQAWIgop0=
+github.com/inconshreveable/log15/v3 v3.2.1/go.mod h1:KzlHSHaUNx8G04/wxNni5+FSzHHl6c6qGYNcJcnxn68=
+github.com/kevinburke/handlers v0.50.0 h1:epjCtgGIo8dTpPHGPl2CedRxSy4gLepszMnx9F+zdQE=
+github.com/kevinburke/handlers v0.50.0/go.mod h1:SLnMMv4XETcRcmJcEQH6wbQwV14EVMZ/zHf4NuIcSKg=
+github.com/kevinburke/rest/v2 v2.15.0 h1:FaOMZqJMoHBSZheqqKWSkh37RksWEKc70douAHFB0wE=
+github.com/kevinburke/rest/v2 v2.15.0/go.mod h1:X3cM9MKkTi8gorCGaMZ9q0/a/y908Ea1pOI9ha4zC7o=
+golang.org/x/sys v0.44.0 h1:ildZl3J4uzeKP07r2F++Op7E9B29JRUy+a27EibtBTQ=
+golang.org/x/sys v0.44.0/go.mod h1:4GL1E5IUh+htKOUEOaiffhrAeqysfVGipDYzABqnCmw=
+golang.org/x/term v0.43.0 h1:S4RLU2sB31O/NCl+zFN9Aru9A/Cq2aqKpTZJ6B+DwT4=
+golang.org/x/term v0.43.0/go.mod h1:lrhlHNdQJHO+1qVYiHfFKVuVioJIheAc3fBSMFYEIsk=

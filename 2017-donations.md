@@ -74,11 +74,11 @@ deductible, but it's easy for people to give to you.
 [le]: https://letsencrypt.org/
 [projectalloy]: https://www.projectalloy.org/
 [sfc]: https://sfconservancy.org/projects/current/
-[carla]: http://carlaef.org/
-[postgres]: http://www.spi-inc.org/
+[carla]: https://calhdf.org/
+[postgres]: https://www.spi-inc.org/
 [press]: https://freedom.press/
 [nilc]: https://www.nilc.org/
 [gobridge]: https://golangbridge.org/
-[openbsd]: http://www.openbsdfoundation.org/
+[openbsd]: https://www.openbsdfoundation.org/
 [neovim]: https://neovim.io/
 [vim-go]: https://github.com/fatih/vim-go

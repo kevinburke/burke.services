@@ -189,7 +189,7 @@ events).
 
 3. Push the data from Kinesis Firehose to Redshift.
 
-[subscription]: http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions.html
+[subscription]: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions.html
 
 Then we multiply the amount of time a given ECS task ran (say, 120 seconds)
 by the number of CPU units it used on that machine (up to 4096 - this info is
@@ -203,7 +203,7 @@ the time, and the excess currently gets divided across the services running on
 the instance, which may or may not be the right culprits for that overhead. But
 (and you may recognize this as a common theme in this post), it's good enough.
 
-[definition]: http://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html
+[definition]: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html
 
 #### Product areas per service
 
@@ -376,7 +376,7 @@ your costs!
 [bill]: https://segment.com/blog/the-million-dollar-eng-problem/
 [burke]: https://burke.services
 [awsbilling]: https://github.com/heroku/awsdetailedbilling
-[cost-allocation-tags]: http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html
+[cost-allocation-tags]: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html
 [terraform]: https://www.terraform.io/
 [more-comment-parsers]: https://kev.inburke.com/kevin/more-comment-preserving-configuration-parsers/
 [hcl]: https://github.com/hashicorp/hcl

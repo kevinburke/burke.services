@@ -1,32 +1,66 @@
+// Command burke_services_renderer renders a Markdown file to HTML using the
+// site template (index.template in the current directory) and writes the
+// result to stdout.
+//
+// It shells out to the "markdown" binary, which must pass raw HTML through
+// unchanged (e.g. Gruber's Markdown.pl). Renderers that strip raw HTML are
+// detected and rejected, since they silently drop images and links.
 package main
 
 import (
+	"bytes"
 	"flag"
+	"fmt"
 	"html/template"
-	"log"
+	"log/slog"
 	"os"
 	"os/exec"
 	"runtime"
 )
 
-const Version = "1.27"
+const Version = "1.28"
+
+// strippedHTMLMarker is the comment goldmark and some other renderers emit in
+// place of raw HTML when "unsafe" rendering is disabled.
+const strippedHTMLMarker = "raw HTML omitted"
 
 func main() {
-	flag.Parse()
-	if flag.NArg() != 1 {
-		log.Fatal("Usage: burke_services_renderer file-to-render")
+	version := flag.Bool("version", false, "Print the version and exit")
+	flag.Usage = func() {
+		fmt.Fprintf(os.Stderr, "Usage: burke_services_renderer [flags] file-to-render\n\n")
+		flag.PrintDefaults()
 	}
-	cmd := exec.Command("markdown", flag.Arg(0))
+	flag.Parse()
+	if *version {
+		fmt.Fprintf(os.Stdout, "burke_services_renderer version %s (%s)\n", Version, runtime.Version())
+		return
+	}
+	if flag.NArg() != 1 {
+		flag.Usage()
+		os.Exit(2)
+	}
+	if err := run(flag.Arg(0)); err != nil {
+		slog.Error("could not render file", "file", flag.Arg(0), "err", err)
+		os.Exit(1)
+	}
+}
+
+func run(filename string) error {
+	cmd := exec.Command("markdown", filename)
+	cmd.Stderr = os.Stderr
 	out, err := cmd.Output()
 	if err != nil {
-		log.Fatal(err)
+		return fmt.Errorf("running markdown: %w", err)
+	}
+	if bytes.Contains(out, []byte(strippedHTMLMarker)) {
+		return fmt.Errorf("markdown output contains %q; the markdown binary on your PATH strips raw HTML, use one that passes it through", strippedHTMLMarker)
 	}
 	// todo make this work with relative paths.
 	tpl, err := template.ParseFiles("index.template")
-	tpl = tpl.Option("missingkey=error")
 	if err != nil {
-		log.Fatal(err)
+		return err
 	}
+	tpl = tpl.Option("missingkey=error")
 	data := struct {
 		Content   template.HTML
 		GoVersion string
@@ -36,8 +70,12 @@ func main() {
 		GoVersion: runtime.Version(),
 		Version:   Version,
 	}
-	err = tpl.Execute(os.Stdout, data)
-	if err != nil {
-		log.Fatal(err)
+	// Render into a buffer so a template error doesn't leave a partially
+	// written page behind.
+	var buf bytes.Buffer
+	if err := tpl.Execute(&buf, data); err != nil {
+		return err
 	}
+	_, err = os.Stdout.Write(buf.Bytes())
+	return err
 }

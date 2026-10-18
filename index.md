@@ -147,7 +147,7 @@ standardize the codebase.
 [great-client-libraries]: https://www.youtube.com/watch?v=C_UJHqR_2Mo
 [talks]: https://github.com/kevinburke/talks/blob/master/videos.md
 [notion]: https://www.notion.so/
-[ivan]: http://ivzhao.com/
+[ivan]: https://ivzhao.com/
 [ngrok]: https://ngrok.com
 [logrole]: https://github.com/saintpete/logrole
 [ethics]: https://burke.services/ethics.html
