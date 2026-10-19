@@ -1,6 +1,6 @@
 SHELL := /bin/bash -o pipefail
 
-BUMP_VERSION := $(shell go env GOPATH)/bin/bump_version
+NEXT_VERSION := $(shell go env GOPATH)/bin/next_version
 JUSTRUN := $(shell go env GOPATH)/bin/justrun
 # Build the renderer locally rather than relying on whatever version is
 # installed on $PATH.
@@ -59,7 +59,7 @@ $(RENDERER): $(GO_FILES) go.mod go.sum
 # Fails if any checked-in page is out of date with its Markdown source, if
 # public/markdown.css doesn't match MARKDOWNCSS_VERSION, or if the Go code
 # isn't formatted.
-check: vet
+check: vet test-release
 	go install github.com/kevinburke/differ@latest
 	differ $(MAKE) --always-make compile
 	differ $(MAKE) sync-css
@@ -72,8 +72,11 @@ lint: vet
 	go install honnef.co/go/tools/cmd/staticcheck@latest
 	$(shell go env GOPATH)/bin/staticcheck ./...
 
-test: vet
+test: vet test-release
 	go test -trimpath ./...
+
+test-release:
+	bash scripts/release_test.sh
 
 $(JUSTRUN):
 	go install github.com/jmhodges/justrun@latest
@@ -84,11 +87,13 @@ watch: $(JUSTRUN)
 serve:
 	go run -trimpath ./burke_services_server
 
-$(BUMP_VERSION):
-	go install github.com/kevinburke/bump_version@latest
+$(NEXT_VERSION):
+	go install github.com/kevinburke/bump_version/next_version@latest
 
-release: $(BUMP_VERSION)
-	$(BUMP_VERSION) minor burke_services_renderer/main.go
-	$(MAKE) --always-make compile
+# Commit the version and generated pages together, then tag that commit.
+# Run in a release worktree with a clean index, renderer, and HTML. Sources
+# must already match the checked-in HTML; stale pages abort before the bump.
+release: $(NEXT_VERSION)
+	+bash scripts/release.sh "$(NEXT_VERSION)" $(PAGES)
 
-.PHONY: compile sync-css check lint vet test watch serve release
+.PHONY: compile sync-css check lint vet test test-release watch serve release
