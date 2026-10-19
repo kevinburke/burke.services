@@ -378,5 +378,5 @@ your costs!
 [awsbilling]: https://github.com/heroku/awsdetailedbilling
 [cost-allocation-tags]: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html
 [terraform]: https://www.terraform.io/
-[more-comment-parsers]: https://kev.inburke.com/kevin/more-comment-preserving-configuration-parsers/
+[more-comment-parsers]: https://kevin.burke.dev/kevin/more-comment-preserving-configuration-parsers/
 [hcl]: https://github.com/hashicorp/hcl

@@ -22,7 +22,7 @@ would get assigned the same pickup, or a pickup would get "assigned" but
 have no driver, and a driver would get stuck. I wrote a state machine and a
 [transaction library](https://github.com/Shyp/pg-transactions) to fix these. I
 can teach your team [the same techniques to write faster, more correct database
-queries](https://kev.inburke.com/kevin/faster-correct-database-queries/).
+queries](https://kevin.burke.dev/kevin/faster-correct-database-queries/).
 
 - **Productionize your culture.** You shipped a bad error last week; how can you
 minimize the likelihood of shipping another one next week? Does the oncall
@@ -55,10 +55,12 @@ faster tests.
 
 - **Write**. I can help kickstart your company's engineering blog, or work with
 your team on story/content ideas. In the past I've had lots of success
-attracting [a wide audience][hn] to [stories I've written][reddit].
+attracting a wide audience to stories I've written, on [Hacker News][hn]
+([older posts][hn-old]) and [Reddit][reddit].
 
-[hn]: https://hn.algolia.com/?query=inburke.com&sort=byPopularity&prefix=false&page=0&dateRange=all&type=story
-[reddit]: https://www.reddit.com/r/programming/search?q=url%3Akev.inburke.com&sort=top&restrict_sr=on&t=all
+[hn]: https://hn.algolia.com/?query=kevin.burke.dev&sort=byPopularity&prefix=false&page=0&dateRange=all&type=story
+[hn-old]: https://hn.algolia.com/?query=inburke.com&sort=byPopularity&prefix=false&page=0&dateRange=all&type=story
+[reddit]: https://www.reddit.com/search/?q=url%3Akevin.burke.dev+OR+url%3Akev.inburke.com&sort=top&t=all
 
 - **Find errors in production.** I have lots of experience debugging and fixing
 issues, often on the fly, while oncall. Here is an example from Shyp's eBay
@@ -86,12 +88,20 @@ clients; I gave a talk about [designing great client libraries at Twiliocon
 in 2013][great-client-libraries]. I can work with your team on API and client
 library design.
 
+- **Turn messy public data into something useful.** I built and run [Public
+Meetings][public-meetings], which scrapes meeting videos and agendas from city
+councils, school boards, and transit agencies around California, transcribes
+them, and makes them searchable with timestamped links back to the video. I can
+build similar ingestion, transcription and search pipelines for your data.
+
+[public-meetings]: https://public-meetings.burke.services/
+
 - **Other Stuff.** This is not an exclusive list! I've learned a ton on the
 fly, and can probably do that with your company as well.
 
 I have experience with an array of languages, notably Go, Javascript, Python,
 Bash, PHP. I've maintained API clients in more languages than that. Here's
-my [resume](https://kev.inburke.com/resume/kevinburke.pdf). Here's [a list of
+my [resume](https://kevin.burke.dev/resume/kevinburke.pdf). Here's [a list of
 talks that I've given][talks], with links to video.
 
 [Contact Me](mailto:kevin@burke.services)
@@ -142,7 +152,7 @@ standardize the codebase.
 
 [Contact Me](mailto:kevin@burke.services)
 
-[speed-tests]: https://shyp.github.io/2015/07/13/speed-up-your-javascript-tests.html
+[speed-tests]: https://web.archive.org/web/20160304152844/https://shyp.github.io/2015/07/13/speed-up-your-javascript-tests.html
 [write-docs]: https://www.youtube.com/watch?v=sQP_hUNCrcE
 [great-client-libraries]: https://www.youtube.com/watch?v=C_UJHqR_2Mo
 [talks]: https://github.com/kevinburke/talks/blob/master/videos.md

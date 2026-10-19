@@ -9,14 +9,14 @@ This error has since been fixed.
 
 For example:
 
-    https://www.capitaloneinvesting.com/main/authentication/signin.aspx?tl=https://kev.inburke.com/foo/bar
+    https://www.capitaloneinvesting.com/main/authentication/signin.aspx?tl=https://kevin.burke.dev/foo/bar
 
 If you were already logged in, you are automatically redirected to the URL
 in the `tl` parameter. An attacker could use this to present a URL for
 capitaloneinvesting.com that immediately redirects to their phishing site.
 
 More information about this class of vulnerability is available here:
-https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet
+<https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html>
 
 ## Timeline
 

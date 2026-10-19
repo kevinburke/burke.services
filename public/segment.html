@@ -134,7 +134,7 @@ resource "aws<em>s3</em>bucket" "staging_table" {
 
 <p>So I wanted to verify that every time someone wrote <code>resource "aws_s3_bucket"</code>
 into a Terraform file, they included a <code>product_area</code> tag. Fortunately Terraform
-configurations are written in <a href="https://github.com/hashicorp/hcl">HCL</a>, which ships with <a href="https://kev.inburke.com/kevin/more-comment-preserving-configuration-parsers/">a comment preserving
+configurations are written in <a href="https://github.com/hashicorp/hcl">HCL</a>, which ships with <a href="https://kevin.burke.dev/kevin/more-comment-preserving-configuration-parsers/">a comment preserving
 configuration parser</a>. So I wrote a checker that walks
 every Terraform file looking for taggable resources lacking a <code>product_area</code>
 tag.</p>

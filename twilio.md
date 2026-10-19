@@ -58,7 +58,7 @@ At Twiliocon in 2013, I gave a talk about designing great client libraries.
 
 Here's [the contents of the talk in a blog post][client-library-design].
 
-[client-library-design]: https://kev.inburke.com/kevin/client-library-design/
+[client-library-design]: https://kevin.burke.dev/kevin/client-library-design/
 
 I gave a talk on designing documentation for people that don't read, that
 summarized a lot of what we learned at Twilio about how to help people use the
