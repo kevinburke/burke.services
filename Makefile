@@ -21,7 +21,17 @@ PAGES := \
 	public/2016/donations.html \
 	public/2017/donations.html
 
+# public/markdown.css is an unmodified copy of markdown.css from
+# github.com/kevinburke/markdowncss at this tag. To upgrade, change the tag
+# and run "make sync-css". Site-specific rules go in public/site.css.
+MARKDOWNCSS_VERSION := v1.0.0
+MARKDOWNCSS_URL := https://raw.githubusercontent.com/kevinburke/markdowncss/$(MARKDOWNCSS_VERSION)/markdown.css
+
 compile: $(PAGES)
+
+sync-css:
+	curl --fail --silent --show-error --location --output public/markdown.css.tmp $(MARKDOWNCSS_URL)
+	@mv public/markdown.css.tmp public/markdown.css
 
 # Render to a temp file first so a failed render doesn't leave an empty or
 # truncated page behind.
@@ -46,11 +56,13 @@ public/2017/donations.html: 2017-donations.md index.template $(RENDERER)
 $(RENDERER): $(GO_FILES) go.mod go.sum
 	go build -trimpath -o $@ ./burke_services_renderer
 
-# Fails if any checked-in page is out of date with its Markdown source, or if
-# the Go code isn't formatted.
+# Fails if any checked-in page is out of date with its Markdown source, if
+# public/markdown.css doesn't match MARKDOWNCSS_VERSION, or if the Go code
+# isn't formatted.
 check: vet
 	go install github.com/kevinburke/differ@latest
 	differ $(MAKE) --always-make compile
+	differ $(MAKE) sync-css
 	differ gofmt -w .
 
 vet:
@@ -79,4 +91,4 @@ release: $(BUMP_VERSION)
 	$(BUMP_VERSION) minor burke_services_renderer/main.go
 	$(MAKE) --always-make compile
 
-.PHONY: compile check lint vet test watch serve release
+.PHONY: compile sync-css check lint vet test watch serve release

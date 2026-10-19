@@ -1,0 +1,10 @@
+/* Rules specific to burke.services. The base stylesheet, markdown.css, is
+ * an unmodified copy of github.com/kevinburke/markdowncss; see "make
+ * sync-css" in the Makefile. Put site-only changes here, not there. */
+body {
+    padding-bottom: 3rem;
+}
+footer {
+    margin-top: 2rem;
+    font-size: 0.75rem;
+}
