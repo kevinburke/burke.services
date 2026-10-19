@@ -18,7 +18,7 @@ import (
 	"runtime"
 )
 
-const Version = "1.31"
+const Version = "1.32"
 
 // strippedHTMLMarker is the comment goldmark and some other renderers emit in
 // place of raw HTML when "unsafe" rendering is disabled.
